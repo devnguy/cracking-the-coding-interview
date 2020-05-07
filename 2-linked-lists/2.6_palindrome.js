@@ -2,6 +2,8 @@
  * Implement a function to check if a linked list is a palindrome.
  *
  * Solved 5/7/20. O(n/2) = O(n)
+ * I cheated. Doubly linked list was not the solution. Reverse the linked list
+ * and compare reversed with original.
  */
 
 const DLinkedList = require('./DLinkedList')
