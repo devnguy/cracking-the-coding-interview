@@ -18,17 +18,19 @@ class Stack {
   }
 
   pop() {
-    if (!this.top) {
-      return null
-    }
-    const poppedTop = this.top
+    if (this.isEmpty()) return
+    const poppedTop = this.top.data
     this.top = this.top.next
     this.length--
     return poppedTop
   }
 
   top() {
-    return this.top
+    return this.top.data
+  }
+
+  isEmpty() {
+    return !this.top
   }
 
   displayReverse() {
