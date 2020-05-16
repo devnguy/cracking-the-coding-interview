@@ -29,16 +29,6 @@ class LinkedList {
     }
     this.last = newNode
     this.length++
-    // if (this.head) {
-    //   let current = this.head
-    //   while (current.next) {
-    //     current = current.next
-    //   }
-    //   current.next = new Node(data)
-    // } else {
-    //   this.head = new Node(data)
-    // }
-    // this.length++
   }
 
   /**
