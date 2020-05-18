@@ -25,7 +25,7 @@ class Stack {
     return poppedTop
   }
 
-  top() {
+  peek() {
     return this.top.data
   }
 
