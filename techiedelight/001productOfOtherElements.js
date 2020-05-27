@@ -4,6 +4,10 @@
  * operator.
  */
 
+/**
+ * Maintain memo of previously calculated products. If a memo exists, return
+ * that value. Otherwise, calculate it and store it for retrieval.
+ */
 const calcProduct = (a, i, direction, memo) => {
   if (i < 0 || i >= a.length) return 1
   if (!memo.hasOwnProperty(i)) {
